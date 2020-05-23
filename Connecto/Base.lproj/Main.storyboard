@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1344.9275362318842" y="417.85714285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Gista View Controller-->
         <scene sceneID="OFi-TM-b8H">
             <objects>
-                <viewController id="R5C-25-33x" sceneMemberID="viewController">
+                <viewController id="R5C-25-33x" customClass="GistaViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJK-C2-jlS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +128,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Ls1-lv-gsy" kind="show" identifier="RegistrationSuccessful" id="ofw-f9-fy4"/>
+                                            <action selector="signupActivated:" destination="R5C-25-33x" eventType="touchUpInside" id="7jn-dw-bHw"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="zhd-JE-vJK">
@@ -170,15 +170,20 @@
                         <viewLayoutGuide key="safeArea" id="zSf-hi-ze6"/>
                     </view>
                     <navigationItem key="navigationItem" id="80a-uw-u0x"/>
+                    <connections>
+                        <outlet property="emeruTextField" destination="ma5-tT-JTM" id="7mQ-dR-hJY"/>
+                        <outlet property="pasuwodoTextField" destination="Wcf-AJ-00Z" id="ai0-aw-raN"/>
+                        <segue destination="Ls1-lv-gsy" kind="show" identifier="RegistrationSuccessful" id="Lhk-v6-UD5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sN0-rX-uXO" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="-295.3125"/>
         </scene>
-        <!--View Controller-->
+        <!--Ogai View Controller-->
         <scene sceneID="v9m-8q-6BG">
             <objects>
-                <viewController id="bew-UF-STK" sceneMemberID="viewController">
+                <viewController id="bew-UF-STK" customClass="OgaiViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6H-vd-4do">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,7 +229,7 @@
                                         <rect key="frame" x="77" y="124" width="260" height="53"/>
                                         <color key="backgroundColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
-                                        <state key="normal" title="Register">
+                                        <state key="normal" title="Log In">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -233,7 +238,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="Ls1-lv-gsy" kind="show" identifier="LoginSuccessful" id="DVP-vl-tqb"/>
+                                            <action selector="SigninActivated:" destination="bew-UF-STK" eventType="touchUpInside" id="sL9-mO-EER"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -266,10 +271,15 @@
                         <viewLayoutGuide key="safeArea" id="ZNy-dR-9pK"/>
                     </view>
                     <navigationItem key="navigationItem" id="cFV-L8-lce"/>
+                    <connections>
+                        <outlet property="emeruTextField" destination="nmn-2u-pFk" id="vUQ-5k-Cky"/>
+                        <outlet property="pasuwodoTextField" destination="bEk-uO-7Jj" id="W6W-Gh-2H2"/>
+                        <segue destination="Ls1-lv-gsy" kind="show" identifier="SigninSuccessful" id="7dD-dW-XLN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SJf-ma-K12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-317" y="-198"/>
+            <point key="canvasLocation" x="-507" y="-250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HSE-io-UcS">
@@ -366,7 +376,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DVP-vl-tqb"/>
+        <segue reference="7dD-dW-XLN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
