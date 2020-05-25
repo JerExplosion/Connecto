@@ -12,7 +12,7 @@ extension UINavigationController {
     func crossDissolve(_ viewController: UIViewController) {
         
         let cdTransition = CATransition()
-        cdTransition.duration = 0.33
+        cdTransition.duration = 0.61
         cdTransition.type = CATransitionType.fade
         view.layer.add(cdTransition, forKey: nil)
         pushViewController(viewController, animated: false)
@@ -24,7 +24,7 @@ extension UINavigationController {
     func crossDissolvePopToRoot(_ viewController: UIViewController) {
         
         let cdTransition = CATransition()
-        cdTransition.duration = 0.33
+        cdTransition.duration = 0.61
         cdTransition.type = CATransitionType.fade
         view.layer.add(cdTransition, forKey: nil)
         popToRootViewController(animated: false)

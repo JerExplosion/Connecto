@@ -12,15 +12,24 @@ import UIKit
 class iMessViewController: UIViewController {
     
     @IBOutlet weak var iMessTable: UITableView!
-    
     @IBOutlet weak var iMessTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        iMessTable.dataSource = self
         navigationItem.title = "⚡️"
         navigationItem.hidesBackButton = true
         
+        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNib , bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloID)
+        
     }
+    
+    var iChats: [iMess] = [
+        iMess(sender: "007@007.com", body: "Hola at ya"),
+        iMess(sender: "33233.com", body: "Right back at ya"),
+        iMess(sender: "007@007.com", body: "Egao ga suteki dane ")
+    ]
     
     
     @IBAction func signOutTapped(_ sender: UIBarButtonItem) {
@@ -36,13 +45,28 @@ class iMessViewController: UIViewController {
         }
         
     }
-    
-    
+
     
     @IBAction func shootTapped(_ sender: UIButton) {
         
-        
     }
+
+}
+
+extension iMessViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return iChats.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
+       
+        cello.bubbleLabel.text = iChats[indexPath.row].body
+        
+        return cello
+    }
+    
     
     
     

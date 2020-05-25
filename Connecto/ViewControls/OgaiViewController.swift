@@ -26,7 +26,7 @@ class OgaiViewController: UIViewController {
             if let ergo = error {
                 print(ergo.localizedDescription)
             } else {
-                self.performSegue(withIdentifier: "SigninSuccessful", sender: self)
+                self.performSegue(withIdentifier: GloballyUsed.signinginSegue, sender: self)
             }
         }
                    

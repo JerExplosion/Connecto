@@ -31,7 +31,7 @@ class GistaViewController: UIViewController {
                     print(ergo.localizedDescription)
                     // do a notification pop-up to tell 'em 'passwords must be 6 digits or longer'
                 } else {
-                    self.performSegue(withIdentifier: "RegistrationSuccessful", sender: self)
+                    self.performSegue(withIdentifier: GloballyUsed.registrationSegue, sender: self)
                 }
                 
             } 

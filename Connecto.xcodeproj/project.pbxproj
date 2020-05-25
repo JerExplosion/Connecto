@@ -18,6 +18,9 @@
 		8F756C062475EAEE00142787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C042475EAEE00142787 /* Main.storyboard */; };
 		8F756C082475EAF400142787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C072475EAF400142787 /* Assets.xcassets */; };
 		8F756C0B2475EAF400142787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C092475EAF400142787 /* LaunchScreen.storyboard */; };
+		8FEEC593247C606C00488FCD /* iMess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC592247C606C00488FCD /* iMess.swift */; };
+		8FEEC597247C656D00488FCD /* ChatBubbleCelloo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC595247C656D00488FCD /* ChatBubbleCelloo.swift */; };
+		8FEEC598247C656D00488FCD /* ChatBubbleCelloo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FEEC596247C656D00488FCD /* ChatBubbleCelloo.xib */; };
 		8FF92154247986220012A637 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FF92153247986220012A637 /* GoogleService-Info.plist */; };
 		8FF921562479960A0012A637 /* GistaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF921552479960A0012A637 /* GistaViewController.swift */; };
 		8FF9215824799CB70012A637 /* GloballyUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9215724799CB70012A637 /* GloballyUsed.swift */; };
@@ -39,6 +42,9 @@
 		8F756C072475EAF400142787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F756C0A2475EAF400142787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F756C0C2475EAF400142787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FEEC592247C606C00488FCD /* iMess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMess.swift; sourceTree = "<group>"; };
+		8FEEC595247C656D00488FCD /* ChatBubbleCelloo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCelloo.swift; sourceTree = "<group>"; };
+		8FEEC596247C656D00488FCD /* ChatBubbleCelloo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatBubbleCelloo.xib; sourceTree = "<group>"; };
 		8FF92153247986220012A637 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FF921552479960A0012A637 /* GistaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GistaViewController.swift; path = Connecto/Assets.xcassets/GistaViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FF9215724799CB70012A637 /* GloballyUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloballyUsed.swift; sourceTree = "<group>"; };
@@ -107,9 +113,11 @@
 			children = (
 				8F756BFE2475EAEE00142787 /* AppDelegate.swift */,
 				8F756C002475EAEE00142787 /* SceneDelegate.swift */,
-				8FF9215724799CB70012A637 /* GloballyUsed.swift */,
+				8FEEC594247C643500488FCD /* Models */,
 				8F2F2E9524786B55009A5E86 /* ViewControls */,
 				8F756C042475EAEE00142787 /* Main.storyboard */,
+				8FEEC595247C656D00488FCD /* ChatBubbleCelloo.swift */,
+				8FEEC596247C656D00488FCD /* ChatBubbleCelloo.xib */,
 				8F2F2E9624786B78009A5E86 /* Views */,
 				8F756C072475EAF400142787 /* Assets.xcassets */,
 				8F756C092475EAF400142787 /* LaunchScreen.storyboard */,
@@ -117,6 +125,15 @@
 				8FF92153247986220012A637 /* GoogleService-Info.plist */,
 			);
 			path = Connecto;
+			sourceTree = "<group>";
+		};
+		8FEEC594247C643500488FCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FF9215724799CB70012A637 /* GloballyUsed.swift */,
+				8FEEC592247C606C00488FCD /* iMess.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		926B948A4A6EAD2223616F39 /* Pods */ = {
@@ -192,6 +209,7 @@
 				8FF92154247986220012A637 /* GoogleService-Info.plist in Resources */,
 				8F756C082475EAF400142787 /* Assets.xcassets in Resources */,
 				8F756C062475EAEE00142787 /* Main.storyboard in Resources */,
+				8FEEC598247C656D00488FCD /* ChatBubbleCelloo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +263,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF921562479960A0012A637 /* GistaViewController.swift in Sources */,
+				8FEEC593247C606C00488FCD /* iMess.swift in Sources */,
 				8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */,
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
 				8F756C032475EAEE00142787 /* KaoViewController.swift in Sources */,
+				8FEEC597247C656D00488FCD /* ChatBubbleCelloo.swift in Sources */,
 				8F5B3069247AE35600EE7AA0 /* iMessViewController.swift in Sources */,
 				8F756BFF2475EAEE00142787 /* AppDelegate.swift in Sources */,
 				8FF9215824799CB70012A637 /* GloballyUsed.swift in Sources */,
