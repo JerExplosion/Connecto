@@ -194,7 +194,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="bRf-hB-Tcr">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-2u-pFk">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="007@007.com" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-2u-pFk">
                                         <rect key="frame" x="49" y="51" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -219,7 +219,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="p3o-cR-0qf">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEk-uO-7Jj">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="007007" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEk-uO-7Jj">
                                         <rect key="frame" x="49" y="48" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="-507" y="-250"/>
         </scene>
-        <!--View Controller-->
+        <!--Mess View Controller-->
         <scene sceneID="HSE-io-UcS">
             <objects>
-                <viewController id="Ls1-lv-gsy" sceneMemberID="viewController">
+                <viewController id="Ls1-lv-gsy" customClass="iMessViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0oK-bt-rSk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,6 +325,9 @@
                                         </constraints>
                                         <color key="tintColor" name="BrandLightPurple"/>
                                         <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="shootTapped:" destination="Ls1-lv-gsy" eventType="touchUpInside" id="lbM-5t-TAx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79508519172668457" green="0.94716519117355347" blue="0.90393859148025513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -350,7 +353,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="epI-vR-ZrE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Crn-3c-YRc"/>
+                    <navigationItem key="navigationItem" id="Crn-3c-YRc">
+                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="rF8-yR-Ugd">
+                            <connections>
+                                <action selector="signOutTapped:" destination="Ls1-lv-gsy" id="TSK-3h-w3R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="iMessTable" destination="37x-Xv-W6h" id="Fbs-oS-6WH"/>
+                        <outlet property="iMessTextField" destination="YMt-tm-sSl" id="W0Z-Xm-egW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cu8-g4-Gz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
