@@ -14,6 +14,8 @@ class iMessViewController: UIViewController {
     @IBOutlet weak var iMessTable: UITableView!
     @IBOutlet weak var iMessTextField: UITextField!
     
+    let databaseFire = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,6 +51,17 @@ class iMessViewController: UIViewController {
     
     @IBAction func shootTapped(_ sender: UIButton) {
         
+        if let messageToBeShot = iMessTextField.text,
+            let messageCreator = Auth.auth().currentUser?.email {
+            
+            databaseFire.collection(GloballyUsed.FireStore.collectionName).addDocument(data: [ GloballyUsed.FireStore.senderFD: messageCreator, GloballyUsed.FireStore.bodyFD: messageToBeShot]) { (error) in
+                if let ergo = error {
+                    print(ergo.localizedDescription )
+                } else {
+                    print("successfully saved data")
+                }
+            }
+        }
     }
 
 }
