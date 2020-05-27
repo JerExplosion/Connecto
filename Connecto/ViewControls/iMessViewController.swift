@@ -29,33 +29,37 @@ class iMessViewController: UIViewController {
     }
     
     func fireloadMessages() {
-        iChats = []
-        databaseFire.collection(GloballyUsed.FireStore.collectionName).getDocuments { (querySnapshot, error) in
-            if let ergo = error {
-                print(ergo.localizedDescription)
-            } else {
-                if let snapshotDocuments = querySnapshot?.documents {
-                    for docu in snapshotDocuments {
-                        let data = docu.data()
-                        if let mSender = data[GloballyUsed.FireStore.senderFD] as? String, let mBody = data[GloballyUsed.FireStore.bodyFD] as? String {
-                            let iNewMess = iMess(sender:mSender, body: mBody)
-                            self.iChats.append(iNewMess)
-                            
-                            DispatchQueue.main.async {
-                                self.iMessTable.reloadData()
+        databaseFire.collection(GloballyUsed.FireStore.collectionName)
+            .order(by: GloballyUsed.FireStore.dateFD)
+            .addSnapshotListener { (querySnapshot, error) in
+                
+                self.iChats = []
+                
+                if let ergo = error {
+                    print(ergo.localizedDescription)
+                } else {
+                    if let snapshotDocuments = querySnapshot?.documents {
+                        for docu in snapshotDocuments {
+                            let data = docu.data()
+                            if let mSender = data[GloballyUsed.FireStore.senderFD] as? String, let mBody = data[GloballyUsed.FireStore.bodyFD] as? String {
+                                let iNewMess = iMess(sender:mSender, body: mBody)
+                                self.iChats.append(iNewMess)
+                                
+                                DispatchQueue.main.async {
+                                    self.iMessTable.reloadData()
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
     
-
+    
     var iChats: [iMess] = [
-        iMess(sender: "007@007.com", body: "Hola at ya"),
-        iMess(sender: "33233.com", body: "Right back at ya"),
-        iMess(sender: "007@007.com", body: "Egao ga suteki dane ")
+        iMess(sender: "007@007.com", body: "  "),
+        iMess(sender: "33233.com", body: " "),
+        iMess(sender: "007@007.com", body: "")
     ]
     
     
@@ -64,22 +68,27 @@ class iMessViewController: UIViewController {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-         
+            
             navigationController?.crossDissolvePopToRoot(self)
-          
+            
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
         
     }
-
+    
     
     @IBAction func shootTapped(_ sender: UIButton) {
         
         if let messageToBeShot = iMessTextField.text,
-            let messageCreator = Auth.auth().currentUser?.email {
+            let messageCreator = Auth.auth().currentUser?.email {    
             
-            databaseFire.collection(GloballyUsed.FireStore.collectionName).addDocument(data: [ GloballyUsed.FireStore.senderFD: messageCreator, GloballyUsed.FireStore.bodyFD: messageToBeShot]) { (error) in
+            databaseFire.collection(GloballyUsed.FireStore.collectionName).addDocument(data:
+                
+                [   GloballyUsed.FireStore.senderFD: messageCreator,   GloballyUsed.FireStore.bodyFD: messageToBeShot, GloballyUsed.FireStore.dateFD: Date().timeIntervalSince1970
+                ])
+                
+            { (error) in
                 if let ergo = error {
                     print(ergo.localizedDescription )
                 } else {
@@ -88,10 +97,9 @@ class iMessViewController: UIViewController {
             }
         }
     }
-
 }
 
-extension iMessViewController: UITableViewDataSource {
+extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return iChats.count
     }
@@ -99,13 +107,13 @@ extension iMessViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
-       
+        
         cello.bubbleLabel.text = iChats[indexPath.row].body
         
         return cello
     }
     
-    
-    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        iMessTable.deselectRow(at: indexPath, animated: true)
+    }
 }
