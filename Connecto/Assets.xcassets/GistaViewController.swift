@@ -2,7 +2,7 @@
 //  GistaViewController.swift
 //  Connecto
 //
-//  Created by Jerry Ren on 5/23/20.
+//  Created by Jerry Ren on 5/24/20.
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 
@@ -33,11 +33,10 @@ class GistaViewController: UIViewController {
                 } else {
                     self.performSegue(withIdentifier: GloballyUsed.registrationSegue, sender: self)
                 }
-                
             } 
         }
         
     }
     
-}
+}    
 

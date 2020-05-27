@@ -10,7 +10,6 @@ import UIKit
 
 class ChatBubbleCelloo: UITableViewCell {
 
-    
     @IBOutlet weak var migeeImageView: UIImageView!
     @IBOutlet weak var bubbleLabel: UILabel!
     @IBOutlet weak var chatBubbleView: UIView!
@@ -23,8 +22,5 @@ class ChatBubbleCelloo: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        
     }
-      
 }

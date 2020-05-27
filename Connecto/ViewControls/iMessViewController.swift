@@ -2,7 +2,7 @@
 //  iMessViewController.swift
 //  Connecto
 //
-//  Created by Jerry Ren on 5/24/20.
+//  Created by Jerry Ren on 5/25/20.
 //  Copyright © 2020 Jerry Ren. All rights reserved.
 //
 
@@ -25,8 +25,33 @@ class iMessViewController: UIViewController {
         
         iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNib , bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloID)
         
+        fireloadMessages()
     }
     
+    func fireloadMessages() {
+        iChats = []
+        databaseFire.collection(GloballyUsed.FireStore.collectionName).getDocuments { (querySnapshot, error) in
+            if let ergo = error {
+                print(ergo.localizedDescription)
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for docu in snapshotDocuments {
+                        let data = docu.data()
+                        if let mSender = data[GloballyUsed.FireStore.senderFD] as? String, let mBody = data[GloballyUsed.FireStore.bodyFD] as? String {
+                            let iNewMess = iMess(sender:mSender, body: mBody)
+                            self.iChats.append(iNewMess)
+                            
+                            DispatchQueue.main.async {
+                                self.iMessTable.reloadData()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
     var iChats: [iMess] = [
         iMess(sender: "007@007.com", body: "Hola at ya"),
         iMess(sender: "33233.com", body: "Right back at ya"),
