@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		8F756C062475EAEE00142787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C042475EAEE00142787 /* Main.storyboard */; };
 		8F756C082475EAF400142787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C072475EAF400142787 /* Assets.xcassets */; };
 		8F756C0B2475EAF400142787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C092475EAF400142787 /* LaunchScreen.storyboard */; };
+		8FAF76012481B0EB00557525 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8FAF76002481B0EB00557525 /* IQKeyboardManagerSwift */; };
 		8FEEC593247C606C00488FCD /* iMess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC592247C606C00488FCD /* iMess.swift */; };
 		8FEEC597247C656D00488FCD /* ChatBubbleCelloo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC595247C656D00488FCD /* ChatBubbleCelloo.swift */; };
 		8FEEC598247C656D00488FCD /* ChatBubbleCelloo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FEEC596247C656D00488FCD /* ChatBubbleCelloo.xib */; };
@@ -56,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110703B6695437AC599D97B9 /* Pods_Connecto.framework in Frameworks */,
+				8FAF76012481B0EB00557525 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +173,9 @@
 			dependencies = (
 			);
 			name = Connecto;
+			packageProductDependencies = (
+				8FAF76002481B0EB00557525 /* IQKeyboardManagerSwift */,
+			);
 			productName = Connecto;
 			productReference = 8F756BFB2475EAEE00142787 /* Connecto.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +204,9 @@
 				Base,
 			);
 			mainGroup = 8F756BF22475EAEE00142787;
+			packageReferences = (
+				8FAF75FF2481B0EB00557525 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 8F756BFC2475EAEE00142787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -480,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8FAF75FF2481B0EB00557525 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8FAF76002481B0EB00557525 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FAF75FF2481B0EB00557525 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F756BF32475EAEE00142787 /* Project object */;
 }

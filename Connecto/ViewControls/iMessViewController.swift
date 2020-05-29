@@ -74,7 +74,6 @@ class iMessViewController: UIViewController {
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
-        
     }
     
     
@@ -107,6 +106,7 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
+        cello.isUserInteractionEnabled = false
         
         cello.bubbleLabel.text = iChats[indexPath.row].body
         
@@ -114,6 +114,7 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        iMessTable.deselectRow(at: indexPath, animated: true)
+        //  iMessTable.deselectRow(at: indexPath, animated: true)
+            // iMessTable.isUserInteractionEnabled = false
     }
 }
