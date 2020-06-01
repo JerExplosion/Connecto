@@ -104,12 +104,27 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
+        
         cello.isUserInteractionEnabled = false
         
-        cello.bubbleLabel.text = iChats[indexPath.row].body
+        let dangeeMess = iChats[indexPath.row]
+        cello.bubbleLabel.text = dangeeMess.body
         
+        if dangeeMess.sender == Auth.auth().currentUser?.email {
+            cello.hidareeImageView.isHidden = true
+            cello.migeeImageView.isHidden = false
+            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandLightBlue")
+            
+        } else {
+            cello.migeeImageView.isHidden = true
+            cello.hidareeImageView.isHidden = false
+            
+            cello.chatBubbleView.backgroundColor = UIColor(hue: 0.8944, saturation: 0.13, brightness: 0.95, alpha: 1.0)
+            // go to UIcolor swift code website
+        }
+
         return cello
     }
     
