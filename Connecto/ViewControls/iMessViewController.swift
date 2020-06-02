@@ -9,7 +9,13 @@
 import Firebase
 import UIKit
 
-class iMessViewController: UIViewController {
+class iMessViewController: UIViewController, UITextFieldDelegate {
+        
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+      textField.text!.removeAll()
+  //    doneBarButton.isEnabled = false
+      return true
+    }
     
     @IBOutlet weak var iMessTable: UITableView!
     @IBOutlet weak var iMessTextField: UITextField!
@@ -23,7 +29,7 @@ class iMessViewController: UIViewController {
         navigationItem.title = "⚡️"
         navigationItem.hidesBackButton = true
         
-        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNib , bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloID)
+        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNib, bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloID)
         
         fireloadMessages()
     }
@@ -47,13 +53,17 @@ class iMessViewController: UIViewController {
                                 
                                 DispatchQueue.main.async {
                                     self.iMessTable.reloadData()
+                                    
+                                    let particularIndexPath = IndexPath(row: (self.iChats.count - 1), section:  0)
+                                    self.iMessTable.scrollToRow(at: particularIndexPath, at: UITableView.ScrollPosition.top, animated: true) // false may be preferrable tho
+                                    
                                 }
                             }
                         }
                     }
                 }
-            }
         }
+    }
     
     
     var iChats: [iMess] = [
@@ -80,20 +90,31 @@ class iMessViewController: UIViewController {
     @IBAction func shootTapped(_ sender: UIButton) {
         
         if let messageToBeShot = iMessTextField.text,
-            let messageCreator = Auth.auth().currentUser?.email {    
+            let messageCreator = Auth.auth().currentUser?.email {
             
-            databaseFire.collection(GloballyUsed.FireStore.collectionName).addDocument(data:
-                
-                [   GloballyUsed.FireStore.senderFD: messageCreator,   GloballyUsed.FireStore.bodyFD: messageToBeShot, GloballyUsed.FireStore.dateFD: Date().timeIntervalSince1970
-                ])
-                
-            { (error) in
-                if let ergo = error {
-                    print(ergo.localizedDescription )
-                } else {
-                    print("successfully saved data")
-                }
+            if messageToBeShot.isEmpty {
+                print("Empty Message") // notification - "say something babe"
             }
+            else {
+                
+                databaseFire.collection(GloballyUsed.FireStore.collectionName).addDocument(data:
+                    
+                    [   GloballyUsed.FireStore.senderFD: messageCreator,   GloballyUsed.FireStore.bodyFD: messageToBeShot, GloballyUsed.FireStore.dateFD: Date().timeIntervalSince1970
+                    ])
+                    
+                { (error) in
+                    if let ergo = error {
+                        print(ergo.localizedDescription + "具体是: \(ergo)")
+                    } else {
+                        print("successfully saved data")
+                        
+                        DispatchQueue.main.async {
+                            self.iMessTextField.text = ""
+                        }
+                    }       
+                }
+            } // the end of else
+            
         }
     }
 }
@@ -104,7 +125,7 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
         let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
         
         cello.isUserInteractionEnabled = false
@@ -124,12 +145,12 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
             cello.chatBubbleView.backgroundColor = UIColor(hue: 0.8944, saturation: 0.13, brightness: 0.95, alpha: 1.0)
             // go to UIcolor swift code website
         }
-
+        
         return cello
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //  iMessTable.deselectRow(at: indexPath, animated: true)
-            // iMessTable.isUserInteractionEnabled = false
+        // iMessTable.isUserInteractionEnabled = false
     }
 }

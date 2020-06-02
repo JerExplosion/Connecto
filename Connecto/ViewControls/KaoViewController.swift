@@ -11,6 +11,11 @@ import UIKit
 class KaoViewController: UIViewController {
     @IBOutlet weak var centeredLabel: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +30,11 @@ class KaoViewController: UIViewController {
             unitCount += 1
         }
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false 
     }
 
 

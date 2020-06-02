@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Kao View Controller-->
+        <!-- -->
         <scene sceneID="FLa-W9-eoh">
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="AUW-5D-LqU" customClass="KaoViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -70,7 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sNe-4Z-9qz"/>
                     </view>
-                    <navigationItem key="navigationItem" id="g8V-7I-zlm"/>
+                    <navigationItem key="navigationItem" title=" " id="g8V-7I-zlm"/>
                     <connections>
                         <outlet property="centeredLabel" destination="Pty-gj-3UT" id="1yc-3h-UYe"/>
                     </connections>
@@ -79,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="1344.9275362318842" y="417.85714285714283"/>
         </scene>
-        <!--Gista View Controller-->
+        <!--⚡️-->
         <scene sceneID="OFi-TM-b8H">
             <objects>
                 <viewController id="R5C-25-33x" customClass="GistaViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,10 +117,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ba-9G-01R" customClass="CurvedButton" customModule="Connecto" customModuleProvider="target">
                                         <rect key="frame" x="77" y="126" width="260" height="51"/>
-                                        <color key="backgroundColor" name="BrandBlue"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <color key="titleColor" name="BrandBlue"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -169,7 +169,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSf-hi-ze6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="80a-uw-u0x"/>
+                    <navigationItem key="navigationItem" title="⚡️" id="80a-uw-u0x"/>
                     <connections>
                         <outlet property="emeruTextField" destination="ma5-tT-JTM" id="7mQ-dR-hJY"/>
                         <outlet property="pasuwodoTextField" destination="Wcf-AJ-00Z" id="ai0-aw-raN"/>
@@ -180,7 +180,7 @@
             </objects>
             <point key="canvasLocation" x="947.82608695652186" y="-295.3125"/>
         </scene>
-        <!--Ogai View Controller-->
+        <!--⚡️-->
         <scene sceneID="v9m-8q-6BG">
             <objects>
                 <viewController id="bew-UF-STK" customClass="OgaiViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -198,7 +198,7 @@
                                         <rect key="frame" x="49" y="51" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -259,7 +259,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.43257567286491394" green="0.97818559408187866" blue="0.91593527793884277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="Yp1-ei-DXq" firstAttribute="leading" secondItem="ZNy-dR-9pK" secondAttribute="leading" id="6Lg-Nu-rre"/>
                             <constraint firstItem="Yp1-ei-DXq" firstAttribute="trailing" secondItem="ZNy-dR-9pK" secondAttribute="trailing" id="Ehj-w0-K6D"/>
@@ -270,7 +270,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZNy-dR-9pK"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cFV-L8-lce"/>
+                    <navigationItem key="navigationItem" title="⚡️" id="cFV-L8-lce"/>
                     <connections>
                         <outlet property="emeruTextField" destination="nmn-2u-pFk" id="vUQ-5k-Cky"/>
                         <outlet property="pasuwodoTextField" destination="bEk-uO-7Jj" id="W6W-Gh-2H2"/>
@@ -281,7 +281,7 @@
             </objects>
             <point key="canvasLocation" x="-507" y="-250"/>
         </scene>
-        <!--Mess View Controller-->
+        <!--⚡️-->
         <scene sceneID="HSE-io-UcS">
             <objects>
                 <viewController id="Ls1-lv-gsy" customClass="iMessViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,7 +343,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="epI-vR-ZrE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Crn-3c-YRc">
+                    <navigationItem key="navigationItem" title="⚡️" id="Crn-3c-YRc">
                         <barButtonItem key="rightBarButtonItem" title="Sign out" id="rF8-yR-Ugd">
                             <connections>
                                 <action selector="signOutTapped:" destination="Ls1-lv-gsy" id="TSK-3h-w3R"/>
@@ -367,6 +367,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="efG-Zd-BP5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="1"/>
+                            <color key="textColor" red="0.6697119507" green="0.97644816010000002" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

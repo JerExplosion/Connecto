@@ -17,7 +17,7 @@ class GistaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.backBarButtonItem?.title = "whatev" // why doesn't this work
     }
     
     @IBAction func signupActivated(_ sender: CurvedButton) {
