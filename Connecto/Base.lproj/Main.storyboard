@@ -82,7 +82,7 @@
         <!--⚡️-->
         <scene sceneID="OFi-TM-b8H">
             <objects>
-                <viewController id="R5C-25-33x" customClass="GistaViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Gista" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R5C-25-33x" customClass="GistaViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rJK-C2-jlS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,10 +117,10 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ba-9G-01R" customClass="CurvedButton" customModule="Connecto" customModuleProvider="target">
                                         <rect key="frame" x="77" y="126" width="260" height="51"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" name="BrandBlue"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -201,7 +201,7 @@
         <!--⚡️-->
         <scene sceneID="v9m-8q-6BG">
             <objects>
-                <viewController id="bew-UF-STK" customClass="OgaiViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ogai" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bew-UF-STK" customClass="OgaiViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6H-vd-4do">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,10 +245,10 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arx-Kh-C7n" customClass="CurvedButton" customModule="Connecto" customModuleProvider="target">
                                         <rect key="frame" x="77" y="124" width="260" height="53"/>
-                                        <color key="backgroundColor" name="BrandBlue"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" name="BrandBlue"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -289,6 +289,9 @@
                                         <rect key="frame" x="192" y="0.0" width="58" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign up"/>
+                                        <connections>
+                                            <action selector="switchToSignUp:" destination="bew-UF-STK" eventType="touchUpInside" id="BPs-t4-yoj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

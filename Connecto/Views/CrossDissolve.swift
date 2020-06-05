@@ -12,7 +12,7 @@ extension UINavigationController {
     func crossDissolve(_ viewController: UIViewController) {
         
         let cdTransition = CATransition()
-        cdTransition.duration = 0.61
+        cdTransition.duration = 0.47
         cdTransition.type = CATransitionType.fade
         view.layer.add(cdTransition, forKey: nil)
         pushViewController(viewController, animated: false)
@@ -38,4 +38,19 @@ extension UINavigationController {
 //   if desiredVC is KaoViewController {
 //     _ = self.navigationController?.popToViewController(desiredVC as! KaoViewController, animated: true)
 //   }
+//}
+
+// MARK: - set viewcontrollers
+
+// extension UINavigationController {
+//
+//    func crossDissolveSetViewControllers(_ vcArray: [UIViewController]) {
+//
+//        let cdTransition = CATransition()
+//        cdTransition.duration = 0.47
+//        cdTransition.type = CATransitionType.fade // reveal
+//        view.layer.add(cdTransition, forKey: nil)
+//        navigationController?.setViewControllers(vcArray, animated: false)
+//    }
+//
 //}

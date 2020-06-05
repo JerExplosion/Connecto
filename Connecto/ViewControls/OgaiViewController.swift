@@ -33,5 +33,24 @@ class OgaiViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func switchToSignUp(_ sender: UIButton) {
+        
+        let primaryStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let destination = primaryStoryboard.instantiateViewController(withIdentifier: GloballyUsed.GistaStoryboardID) as? GistaViewController else {
+            print("destination unclear bud")
+            return
+        }
+        
+        navigationController?.crossDissolve(destination)
+        
+        guard var vcArray = navigationController?.viewControllers else { return }
+        let count = vcArray.count
+
+        vcArray.remove(at: (count - 2))
+        navigationController?.setViewControllers(vcArray, animated: false)
+
+    }
 
 }       

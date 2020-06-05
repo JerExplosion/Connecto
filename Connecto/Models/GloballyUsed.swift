@@ -16,6 +16,8 @@ public struct GloballyUsed {
     static let chatCelloID = "chatCello"
     static let chatBubbleNib = "ChatBubbleCelloo"
     
+    static let GistaStoryboardID = "Gista"
+    static let OgaiStoryboardID = "Ogai"
     
     struct FireStore {
         static let collectionName = "messages"
