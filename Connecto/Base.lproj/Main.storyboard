@@ -157,14 +157,32 @@
                                     <constraint firstItem="Wcf-AJ-00Z" firstAttribute="left" secondItem="46l-gd-j3P" secondAttribute="left" constant="49" id="xC5-dG-yjN"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="B8u-1X-q2t">
+                                <rect key="frame" x="76.5" y="380" width="261" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xD-xr-u5t">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eV-8X-hr2">
+                                        <rect key="frame" x="209" y="0.0" width="52" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sign in"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
                             <constraint firstItem="oNY-Wy-GmS" firstAttribute="leading" secondItem="zSf-hi-ze6" secondAttribute="leading" id="Bb3-VP-bCp"/>
+                            <constraint firstItem="B8u-1X-q2t" firstAttribute="centerX" secondItem="rJK-C2-jlS" secondAttribute="centerX" id="MDD-k8-yih"/>
                             <constraint firstItem="oNY-Wy-GmS" firstAttribute="top" secondItem="zSf-hi-ze6" secondAttribute="top" id="TIr-0j-MbA"/>
                             <constraint firstItem="oNY-Wy-GmS" firstAttribute="trailing" secondItem="zSf-hi-ze6" secondAttribute="trailing" id="WGT-Z5-RWK"/>
                             <constraint firstItem="46l-gd-j3P" firstAttribute="top" secondItem="oNY-Wy-GmS" secondAttribute="bottom" constant="-100" id="ZIl-LR-X5h"/>
                             <constraint firstItem="46l-gd-j3P" firstAttribute="trailing" secondItem="zSf-hi-ze6" secondAttribute="trailing" id="d7F-bI-x2U"/>
+                            <constraint firstItem="B8u-1X-q2t" firstAttribute="top" secondItem="46l-gd-j3P" secondAttribute="bottom" constant="38" id="p5m-aw-4Dc"/>
                             <constraint firstItem="46l-gd-j3P" firstAttribute="leading" secondItem="zSf-hi-ze6" secondAttribute="leading" id="vmB-eT-ZVg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSf-hi-ze6"/>
@@ -258,6 +276,22 @@
                                     <constraint firstItem="bEk-uO-7Jj" firstAttribute="left" secondItem="Yp1-ei-DXq" secondAttribute="left" constant="49" id="ur3-Nc-RSm"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="xaI-2G-oLl">
+                                <rect key="frame" x="82" y="380" width="250" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxc-jF-njh">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zwq-9C-GAo">
+                                        <rect key="frame" x="192" y="0.0" width="58" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Sign up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="BrandLightBlue"/>
                         <constraints>
@@ -266,7 +300,9 @@
                             <constraint firstItem="Yp1-ei-DXq" firstAttribute="top" secondItem="Mfb-fa-lfX" secondAttribute="bottom" constant="-100" id="Ivh-sP-6yX"/>
                             <constraint firstItem="Mfb-fa-lfX" firstAttribute="trailing" secondItem="ZNy-dR-9pK" secondAttribute="trailing" id="OOb-kk-lqf"/>
                             <constraint firstItem="Mfb-fa-lfX" firstAttribute="top" secondItem="ZNy-dR-9pK" secondAttribute="top" id="YHi-LJ-JzZ"/>
+                            <constraint firstItem="xaI-2G-oLl" firstAttribute="centerX" secondItem="u6H-vd-4do" secondAttribute="centerX" id="eV0-Eb-aIC"/>
                             <constraint firstItem="Mfb-fa-lfX" firstAttribute="leading" secondItem="ZNy-dR-9pK" secondAttribute="leading" id="iX9-Xb-ggK"/>
+                            <constraint firstItem="xaI-2G-oLl" firstAttribute="top" secondItem="Yp1-ei-DXq" secondAttribute="bottom" constant="38" id="rBA-ee-85z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZNy-dR-9pK"/>
                     </view>
