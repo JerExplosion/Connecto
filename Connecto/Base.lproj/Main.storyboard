@@ -170,6 +170,9 @@
                                         <rect key="frame" x="209" y="0.0" width="52" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <state key="normal" title="Sign in"/>
+                                        <connections>
+                                            <action selector="switchToSignIn:" destination="R5C-25-33x" eventType="touchUpInside" id="KoJ-CH-jEj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -216,7 +219,7 @@
                                         <rect key="frame" x="49" y="51" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>

@@ -20,6 +20,22 @@ class GistaViewController: UIViewController {
         self.navigationItem.backBarButtonItem?.title = "whatev" // why doesn't this work
     }
     
+    @IBAction func switchToSignIn(_ sender: UIButton) {
+        let primaryStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        guard let destination = primaryStoryboard.instantiateViewController(withIdentifier: GloballyUsed.OgaiStoryboardID) as? OgaiViewController else {
+            print("destination unclear bud")
+            return
+        }
+        navigationController?.crossDissolve(destination)
+        
+        guard var vcArray = navigationController?.viewControllers else { return }
+        let count = vcArray.count
+
+        vcArray.remove(at: (count - 2))
+        navigationController?.setViewControllers(vcArray, animated: false)
+    }
+    
     @IBAction func signupActivated(_ sender: CurvedButton) {
         
         // change to guard let later
@@ -38,5 +54,5 @@ class GistaViewController: UIViewController {
         
     }
     
-}    
+}
 
