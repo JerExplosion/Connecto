@@ -14,6 +14,7 @@ class KaoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
+        self.navigationItem.backBarButtonItem?.title = "Home"
     }
 
     override func viewDidLoad() {
@@ -29,14 +30,12 @@ class KaoViewController: UIViewController {
             }
             unitCount += 1
         }
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.isNavigationBarHidden = false 
+        navigationController?.isNavigationBarHidden = false
     }
-
-
 }
+
 

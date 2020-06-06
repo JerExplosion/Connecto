@@ -17,7 +17,6 @@ class GistaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.backBarButtonItem?.title = "whatev" // why doesn't this work
     }
     
     @IBAction func switchToSignIn(_ sender: UIButton) {
@@ -46,13 +45,27 @@ class GistaViewController: UIViewController {
                 if let ergo = error {
                     print(ergo.localizedDescription)
                     // do a notification pop-up to tell 'em 'passwords must be 6 digits or longer'
+                       
+                    self.mustBeLongerThanSixCharsAlert()
+                    
                 } else {
                     self.performSegue(withIdentifier: GloballyUsed.registrationSegue, sender: self)
                 }
             } 
         }
-        
+    }
+    
+}                 
+
+extension GistaViewController {
+    
+    func mustBeLongerThanSixCharsAlert() {
+        let alertCon = UIAlertController(title: nil, message: "Bruh, passwords must be 6 characters or longer", preferredStyle: .alert)
+        let dismissAction = UIAlertAction(title: "Got it", style: .cancel, handler: nil)
+        alertCon.addAction(dismissAction)
+        present(alertCon, animated: true, completion: nil)
     }
     
 }
-
+    
+ 

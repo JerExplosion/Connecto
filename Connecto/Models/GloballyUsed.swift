@@ -25,5 +25,9 @@ public struct GloballyUsed {
         static let bodyFD = "body"
         static let dateFD = "date"
     }
+    
+    static let emailSignInError = "There is no user record corresponding to this identifier. The user may have been deleted."
+    
+    static let passwordSignInError = "The password is invalid or the user does not have a password."       
 }
                                 

@@ -136,13 +136,16 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
         if dangeeMess.sender == Auth.auth().currentUser?.email {
             cello.hidareeImageView.isHidden = true
             cello.migeeImageView.isHidden = false
-            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandLightBlue")
+            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandBlue")
+            cello.bubbleLabel.textColor = UIColor.white
             
         } else {
             cello.migeeImageView.isHidden = true
             cello.hidareeImageView.isHidden = false
+            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandLightBlue")
+            cello.bubbleLabel.textColor = UIColor.black
             
-            cello.chatBubbleView.backgroundColor = UIColor(hue: 0.8944, saturation: 0.13, brightness: 0.95, alpha: 1.0)
+            // UIColor(hue: 0.8944, saturation: 0.13, brightness: 0.95, alpha: 1.0)
             // go to UIcolor swift code website
         }
         

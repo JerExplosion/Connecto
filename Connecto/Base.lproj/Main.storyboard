@@ -70,7 +70,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sNe-4Z-9qz"/>
                     </view>
-                    <navigationItem key="navigationItem" title=" " id="g8V-7I-zlm"/>
+                    <navigationItem key="navigationItem" title=" " id="g8V-7I-zlm">
+                        <barButtonItem key="backBarButtonItem" title="⚡️" id="f32-PY-QFR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="centeredLabel" destination="Pty-gj-3UT" id="1yc-3h-UYe"/>
                     </connections>
@@ -190,7 +192,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zSf-hi-ze6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="⚡️" id="80a-uw-u0x"/>
+                    <navigationItem key="navigationItem" title="⚡️" id="80a-uw-u0x">
+                        <barButtonItem key="backBarButtonItem" title="⚡️" id="dQU-Tj-CRX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emeruTextField" destination="ma5-tT-JTM" id="7mQ-dR-hJY"/>
                         <outlet property="pasuwodoTextField" destination="Wcf-AJ-00Z" id="ai0-aw-raN"/>
@@ -386,6 +390,7 @@
                         <viewLayoutGuide key="safeArea" id="epI-vR-ZrE"/>
                     </view>
                     <navigationItem key="navigationItem" title="⚡️" id="Crn-3c-YRc">
+                        <barButtonItem key="backBarButtonItem" title="⚡️" id="EvW-vi-53Q"/>
                         <barButtonItem key="rightBarButtonItem" title="Sign out" id="rF8-yR-Ugd">
                             <connections>
                                 <action selector="signOutTapped:" destination="Ls1-lv-gsy" id="TSK-3h-w3R"/>
@@ -428,7 +433,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7dD-dW-XLN"/>
+        <segue reference="Lhk-v6-UD5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>

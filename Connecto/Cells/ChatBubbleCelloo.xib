@@ -18,9 +18,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-8e-ZMA">
-                        <rect key="frame" x="10" y="10" width="300" height="73"/>
+                        <rect key="frame" x="30" y="10" width="260" height="73"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-c5-WsT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-c5-WsT">
                                 <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="BRa-MD-iKV"/>
@@ -28,12 +28,12 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-z9-Rjz">
-                                <rect key="frame" x="61" y="0.0" width="178" height="50"/>
+                                <rect key="frame" x="61" y="0.0" width="138" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99d-5B-ufK">
-                                        <rect key="frame" x="10" y="10" width="158" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="118" height="30"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -45,8 +45,8 @@
                                     <constraint firstItem="99d-5B-ufK" firstAttribute="top" secondItem="c0B-z9-Rjz" secondAttribute="top" constant="10" id="lMA-S8-qfM"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Kqz-5u-fI3">
-                                <rect key="frame" x="259" y="0.0" width="41" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Kqz-5u-fI3">
+                                <rect key="frame" x="219" y="0.0" width="41" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="7CX-s8-bSh"/>
                                     <constraint firstAttribute="height" constant="41" id="8z2-5Z-Jz6"/>
@@ -56,8 +56,8 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Xss-8e-ZMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Kyb-u9-Ced"/>
-                    <constraint firstAttribute="trailing" secondItem="Xss-8e-ZMA" secondAttribute="trailing" constant="10" id="rBe-Q2-C5l"/>
+                    <constraint firstItem="Xss-8e-ZMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Kyb-u9-Ced"/>
+                    <constraint firstAttribute="trailing" secondItem="Xss-8e-ZMA" secondAttribute="trailing" constant="30" id="rBe-Q2-C5l"/>
                     <constraint firstAttribute="bottom" secondItem="Xss-8e-ZMA" secondAttribute="bottom" constant="10" id="yCd-Kr-8Eb"/>
                     <constraint firstItem="Xss-8e-ZMA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zVx-6c-hUB"/>
                 </constraints>
