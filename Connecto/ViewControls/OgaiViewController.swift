@@ -32,7 +32,7 @@ class OgaiViewController: UIViewController {
                            
                     } else if ergo.localizedDescription == GloballyUsed.passwordSignInError
                     {
-                        self.alertFormula(title: nil, message: "Whoops. Wrong password", action: "Try again")
+                        self.alertFormula(title: nil, message: "Oops. Wrong password", action: "Try again")
                     }
                 } else {
                     self.performSegue(withIdentifier: GloballyUsed.signinginSegue, sender: self)

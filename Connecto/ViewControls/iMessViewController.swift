@@ -29,7 +29,9 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
         navigationItem.title = "⚡️"
         navigationItem.hidesBackButton = true
         
-        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNib, bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloID)
+        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNibMi, bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloIDMi)
+        
+        iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNibU, bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloIDU)
         
         fireloadMessages()
     }
@@ -119,41 +121,3 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
     }
 }
 
-extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return iChats.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cello = iMessTable.dequeueReusableCell(withIdentifier: GloballyUsed.chatCelloID, for: indexPath) as! ChatBubbleCelloo
-        
-        cello.isUserInteractionEnabled = false
-        
-        let dangeeMess = iChats[indexPath.row]
-        cello.bubbleLabel.text = dangeeMess.body
-        
-        if dangeeMess.sender == Auth.auth().currentUser?.email {
-            cello.hidareeImageView.isHidden = true
-            cello.migeeImageView.isHidden = false
-            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandBlue")
-            cello.bubbleLabel.textColor = UIColor.white
-            
-        } else {
-            cello.migeeImageView.isHidden = true
-            cello.hidareeImageView.isHidden = false
-            cello.chatBubbleView.backgroundColor = UIColor(named: "BrandLightBlue")
-            cello.bubbleLabel.textColor = UIColor.black
-            
-            // UIColor(hue: 0.8944, saturation: 0.13, brightness: 0.95, alpha: 1.0)
-            // go to UIcolor swift code website
-        }
-        
-        return cello
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //  iMessTable.deselectRow(at: indexPath, animated: true)
-        // iMessTable.isUserInteractionEnabled = false
-    }
-}

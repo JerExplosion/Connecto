@@ -10,8 +10,8 @@ import UIKit
 
 class ChatBubbleCelloo: UITableViewCell {
 
-    @IBOutlet weak var migeeImageView: UIImageView!
-    @IBOutlet weak var hidareeImageView: UIImageView!
+//    @IBOutlet weak var migeeImageView: UIImageView!
+//    @IBOutlet weak var hidareeImageView: UIImageView!
     @IBOutlet weak var bubbleLabel: UILabel!
     @IBOutlet weak var chatBubbleView: UIView!
      

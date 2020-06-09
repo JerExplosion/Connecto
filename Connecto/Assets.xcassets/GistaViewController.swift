@@ -68,4 +68,12 @@ extension GistaViewController {
     
 }
     
- 
+// MARK: - Implement these two tomorrow
+
+// (might be a bit of an logic puzzle, since the passwords alert condition also needs to be altered)
+
+// "The email address is badly formatted."
+//  "An email address must be provided."
+
+
+           

@@ -3,14 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCello" rowHeight="93" id="KGk-i7-Jjw" customClass="ChatBubbleCelloo" customModule="Connecto" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="chatCelloMi" rowHeight="93" id="KGk-i7-Jjw" customClass="ChatBubbleCelloo" customModule="Connecto" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -18,21 +17,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xss-8e-ZMA">
-                        <rect key="frame" x="30" y="10" width="260" height="73"/>
+                        <rect key="frame" x="100" y="10" width="205" height="73"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YouAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="ub5-c5-WsT">
-                                <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="BRa-MD-iKV"/>
-                                    <constraint firstAttribute="height" constant="41" id="c9o-vQ-jCz"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0B-z9-Rjz">
-                                <rect key="frame" x="61" y="0.0" width="138" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="205" height="50"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99d-5B-ufK">
-                                        <rect key="frame" x="10" y="10" width="118" height="30"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bomb" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99d-5B-ufK">
+                                        <rect key="frame" x="10" y="10" width="185" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -45,19 +37,12 @@
                                     <constraint firstItem="99d-5B-ufK" firstAttribute="top" secondItem="c0B-z9-Rjz" secondAttribute="top" constant="10" id="lMA-S8-qfM"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MeAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Kqz-5u-fI3">
-                                <rect key="frame" x="219" y="0.0" width="41" height="41"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="41" id="7CX-s8-bSh"/>
-                                    <constraint firstAttribute="height" constant="41" id="8z2-5Z-Jz6"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Xss-8e-ZMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Kyb-u9-Ced"/>
-                    <constraint firstAttribute="trailing" secondItem="Xss-8e-ZMA" secondAttribute="trailing" constant="30" id="rBe-Q2-C5l"/>
+                    <constraint firstItem="Xss-8e-ZMA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="100" id="Kyb-u9-Ced"/>
+                    <constraint firstAttribute="trailing" secondItem="Xss-8e-ZMA" secondAttribute="trailing" constant="15" id="rBe-Q2-C5l"/>
                     <constraint firstAttribute="bottom" secondItem="Xss-8e-ZMA" secondAttribute="bottom" constant="10" id="yCd-Kr-8Eb"/>
                     <constraint firstItem="Xss-8e-ZMA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zVx-6c-hUB"/>
                 </constraints>
@@ -66,15 +51,11 @@
             <connections>
                 <outlet property="bubbleLabel" destination="99d-5B-ufK" id="4kg-uO-ZMd"/>
                 <outlet property="chatBubbleView" destination="c0B-z9-Rjz" id="XXU-yI-k5p"/>
-                <outlet property="hidareeImageView" destination="ub5-c5-WsT" id="nXl-t5-nGw"/>
-                <outlet property="migeeImageView" destination="Kqz-5u-fI3" id="eCJ-by-434"/>
             </connections>
             <point key="canvasLocation" x="140.57971014492756" y="148.32589285714286"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="MeAvatar" width="36" height="36"/>
-        <image name="YouAvatar" width="36" height="36"/>
         <namedColor name="BrandLightBlue">
             <color red="0.92199999094009399" green="0.98000001907348633" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

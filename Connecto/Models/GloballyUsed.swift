@@ -13,8 +13,11 @@ public struct GloballyUsed {
     static let registrationSegue = "RegistrationSuccessful"
     static let signinginSegue = "SigninSuccessful"
     
-    static let chatCelloID = "chatCello"
-    static let chatBubbleNib = "ChatBubbleCelloo"
+    static let chatCelloIDMi = "chatCelloMi"
+    static let chatBubbleNibMi = "ChatBubbleCellooMi"
+    
+    static let chatCelloIDU = "chatCelloU"
+    static let chatBubbleNibU = "ChatBubbleCellooU"
     
     static let GistaStoryboardID = "Gista"
     static let OgaiStoryboardID = "Ogai"
