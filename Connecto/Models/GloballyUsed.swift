@@ -22,6 +22,8 @@ public struct GloballyUsed {
     static let GistaStoryboardID = "Gista"
     static let OgaiStoryboardID = "Ogai"
     
+    static let pikachuImageName = "SurprisedPikachu"     
+    
     struct FireStore {
         static let collectionName = "messages"
         static let senderFD = "sender"
