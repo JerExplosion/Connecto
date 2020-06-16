@@ -10,7 +10,6 @@ import Foundation
 
 
 struct iMess {
-    
     let sender: String
     let body: String
 }

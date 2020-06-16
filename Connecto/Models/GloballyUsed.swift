@@ -33,6 +33,13 @@ public struct GloballyUsed {
     
     static let emailSignInError = "There is no user record corresponding to this identifier. The user may have been deleted."
     
-    static let passwordSignInError = "The password is invalid or the user does not have a password."       
+    static let passwordSignInError = "The password is invalid or the user does not have a password."
+    
+    // MARK: - Registration
+    
+    static let badEmailRegistryError = "The email address is badly formatted."
+    static let emptyEmailRegistryError = "An email address must be provided."
+    
+    static let passwordRegistryError = "The password must be 6 characters long or more."
 }
                                 

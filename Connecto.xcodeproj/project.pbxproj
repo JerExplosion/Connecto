@@ -29,6 +29,7 @@
 		8FEEC593247C606C00488FCD /* iMess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC592247C606C00488FCD /* iMess.swift */; };
 		8FEEC597247C656D00488FCD /* ChatBubbleCellooMi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC595247C656D00488FCD /* ChatBubbleCellooMi.swift */; };
 		8FEEC598247C656D00488FCD /* ChatBubbleCellooMi.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FEEC596247C656D00488FCD /* ChatBubbleCellooMi.xib */; };
+		8FF4D4B5249856650031756A /* AlertFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF4D4B4249856650031756A /* AlertFormula.swift */; };
 		8FF92154247986220012A637 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FF92153247986220012A637 /* GoogleService-Info.plist */; };
 		8FF921562479960A0012A637 /* GistaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF921552479960A0012A637 /* GistaViewController.swift */; };
 		8FF9215824799CB70012A637 /* GloballyUsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF9215724799CB70012A637 /* GloballyUsed.swift */; };
@@ -60,6 +61,7 @@
 		8FEEC592247C606C00488FCD /* iMess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMess.swift; sourceTree = "<group>"; };
 		8FEEC595247C656D00488FCD /* ChatBubbleCellooMi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCellooMi.swift; sourceTree = "<group>"; };
 		8FEEC596247C656D00488FCD /* ChatBubbleCellooMi.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatBubbleCellooMi.xib; sourceTree = "<group>"; };
+		8FF4D4B4249856650031756A /* AlertFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertFormula.swift; sourceTree = "<group>"; };
 		8FF92153247986220012A637 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FF921552479960A0012A637 /* GistaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GistaViewController.swift; path = Connecto/Assets.xcassets/GistaViewController.swift; sourceTree = SOURCE_ROOT; };
 		8FF9215724799CB70012A637 /* GloballyUsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GloballyUsed.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				8FF9215724799CB70012A637 /* GloballyUsed.swift */,
 				8FEEC592247C606C00488FCD /* iMess.swift */,
+				8FF4D4B4249856650031756A /* AlertFormula.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
 				8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */,
 				8F756C032475EAEE00142787 /* KaoViewController.swift in Sources */,
+				8FF4D4B5249856650031756A /* AlertFormula.swift in Sources */,
 				8F95B5C4248AA7E30039DDBC /* ExpansionSegue.swift in Sources */,
 				8FEEC597247C656D00488FCD /* ChatBubbleCellooMi.swift in Sources */,
 				8F5B3069247AE35600EE7AA0 /* iMessViewController.swift in Sources */,

@@ -64,13 +64,13 @@ class OgaiViewController: UIViewController {
     
 }
 
-extension OgaiViewController {
-    
-    func alertFormula(title: String?, message: String?, action: String?) {
-        let alertCon = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let dismissAction = UIAlertAction(title: action, style: .cancel, handler: nil)
-        alertCon.addAction(dismissAction)
-        present(alertCon, animated: true, completion: nil)
-    }
-}
+//extension OgaiViewController {
+//    
+//    func alertFormula(title: String?, message: String?, action: String?) {
+//        let alertCon = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        let dismissAction = UIAlertAction(title: action, style: .cancel, handler: nil)
+//        alertCon.addAction(dismissAction)
+//        present(alertCon, animated: true, completion: nil)
+//    }
+//}
 

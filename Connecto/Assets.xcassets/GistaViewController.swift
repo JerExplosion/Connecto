@@ -30,7 +30,7 @@ class GistaViewController: UIViewController {
         
         guard var vcArray = navigationController?.viewControllers else { return }
         let count = vcArray.count
-
+        
         vcArray.remove(at: (count - 2))
         navigationController?.setViewControllers(vcArray, animated: false)
     }
@@ -39,14 +39,26 @@ class GistaViewController: UIViewController {
         
         // change to guard let later
         if let password = pasuwodoTextField.text, let email = emeruTextField.text {
-
+            
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 
                 if let ergo = error {
                     print(ergo.localizedDescription)
                     // do a notification pop-up to tell 'em 'passwords must be 6 digits or longer'
-                       
-                    self.mustBeLongerThanSixCharsAlert()
+                    
+                    let errorMessage = ergo.localizedDescription
+                    
+                    if errorMessage == GloballyUsed.badEmailRegistryError {
+                        self.alertFormula(title: <#T##String?#>, message: <#T##String?#>, action: <#T##String?#>)
+                    }
+                    
+                    else if errorMessage == GloballyUsed.emptyEmailRegistryError {
+                        self.alertFormula(title: <#T##String?#>, message: <#T##String?#>, action: <#T##String?#>)
+                    }
+                    
+                    else if errorMessage == GloballyUsed.passwordRegistryError {
+                        self.mustBeLongerThanSixCharsAlert()
+                    }
                     
                 } else {
                     self.performSegue(withIdentifier: GloballyUsed.registrationSegue, sender: self)
@@ -67,7 +79,7 @@ extension GistaViewController {
     }
     
 }
-    
+
 // MARK: - Implement these two tomorrow
 
 // (might be a bit of an logic puzzle, since the passwords alert condition also needs to be altered)
@@ -76,4 +88,4 @@ extension GistaViewController {
 //  "An email address must be provided."
 
 
-           
+

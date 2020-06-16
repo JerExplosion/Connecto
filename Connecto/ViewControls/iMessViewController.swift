@@ -45,6 +45,7 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
                 
                 if let ergo = error {
                     print(ergo.localizedDescription)
+                    
                 } else {
                     if let snapshotDocuments = querySnapshot?.documents {
                         for docu in snapshotDocuments {
@@ -96,6 +97,9 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
             
             if messageToBeShot.isEmpty {
                 print("Empty Message") // notification - "say something babe"
+                
+                alertFormula(title: nil, message: "Message can't be empty bud", action: "Try again")
+            
             }
             else {
                 
@@ -120,4 +124,5 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
         }
     }
 }
+
 
