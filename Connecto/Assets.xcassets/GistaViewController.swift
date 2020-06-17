@@ -35,6 +35,7 @@ class GistaViewController: UIViewController {
         navigationController?.setViewControllers(vcArray, animated: false)
     }
     
+    
     @IBAction func signupActivated(_ sender: CurvedButton) {
         
         // change to guard let later
@@ -44,40 +45,36 @@ class GistaViewController: UIViewController {
                 
                 if let ergo = error {
                     print(ergo.localizedDescription)
-                    // do a notification pop-up to tell 'em 'passwords must be 6 digits or longer'
-                    
                     let errorMessage = ergo.localizedDescription
                     
-                    if errorMessage == GloballyUsed.badEmailRegistryError {
-                        self.alertFormula(title: <#T##String?#>, message: <#T##String?#>, action: <#T##String?#>)
-                    }
+                    var validPasswordOrNaw = true
                     
-                    else if errorMessage == GloballyUsed.emptyEmailRegistryError {
-                        self.alertFormula(title: <#T##String?#>, message: <#T##String?#>, action: <#T##String?#>)
+                    if email.isEmpty {
+                        self.alertFormula(title: nil, message: "Enter an email address buddy", action: "Try again")
                     }
-                    
+                    else if (email.isValidEmailOrNaw == false) {
+                        self.alertFormula(title: nil, message: "Enter a valid email address buddy", action: "Try again")
+                    }
                     else if errorMessage == GloballyUsed.passwordRegistryError {
                         self.mustBeLongerThanSixCharsAlert()
                     }
-                    
                 } else {
                     self.performSegue(withIdentifier: GloballyUsed.registrationSegue, sender: self)
                 }
             } 
         }
     }
-    
-}                 
+}
 
 extension GistaViewController {
     
     func mustBeLongerThanSixCharsAlert() {
-        let alertCon = UIAlertController(title: nil, message: "Bruh, passwords must be 6 characters or longer", preferredStyle: .alert)
+        let alertCon = UIAlertController(title: nil, message: "Passwords must be 6 characters or longer buddy", preferredStyle: .alert)
         let dismissAction = UIAlertAction(title: "Got it", style: .cancel, handler: nil)
         alertCon.addAction(dismissAction)
         present(alertCon, animated: true, completion: nil)
     }
-    
+           
 }
 
 // MARK: - Implement these two tomorrow

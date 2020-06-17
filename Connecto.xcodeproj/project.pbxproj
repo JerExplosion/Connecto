@@ -22,6 +22,7 @@
 		8F756C082475EAF400142787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C072475EAF400142787 /* Assets.xcassets */; };
 		8F756C0B2475EAF400142787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C092475EAF400142787 /* LaunchScreen.storyboard */; };
 		8F95B5C4248AA7E30039DDBC /* ExpansionSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95B5C3248AA7E30039DDBC /* ExpansionSegue.swift */; };
+		8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C99BA249A909200E862A7 /* IsValidEmailOrNaw.swift */; };
 		8FA9B2E82491A4E2002A9923 /* SurprisedPikachu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */; };
 		8FA9B2EA2491A55C002A9923 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9B2E92491A55C002A9923 /* GifViewController.swift */; };
 		8FA9B2EC2491A753002A9923 /* GIFHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9B2EB2491A753002A9923 /* GIFHandler.swift */; };
@@ -55,6 +56,7 @@
 		8F756C0A2475EAF400142787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F756C0C2475EAF400142787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F95B5C3248AA7E30039DDBC /* ExpansionSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionSegue.swift; sourceTree = "<group>"; };
+		8F9C99BA249A909200E862A7 /* IsValidEmailOrNaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsValidEmailOrNaw.swift; sourceTree = "<group>"; };
 		8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SurprisedPikachu.gif; sourceTree = "<group>"; };
 		8FA9B2E92491A55C002A9923 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		8FA9B2EB2491A753002A9923 /* GIFHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFHandler.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				8FF9215724799CB70012A637 /* GloballyUsed.swift */,
 				8FEEC592247C606C00488FCD /* iMess.swift */,
 				8FF4D4B4249856650031756A /* AlertFormula.swift */,
+				8F9C99BA249A909200E862A7 /* IsValidEmailOrNaw.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF921562479960A0012A637 /* GistaViewController.swift in Sources */,
+				8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */,
 				8FEEC593247C606C00488FCD /* iMess.swift in Sources */,
 				8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */,
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
