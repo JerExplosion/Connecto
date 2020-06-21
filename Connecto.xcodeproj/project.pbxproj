@@ -21,6 +21,9 @@
 		8F756C062475EAEE00142787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C042475EAEE00142787 /* Main.storyboard */; };
 		8F756C082475EAF400142787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C072475EAF400142787 /* Assets.xcassets */; };
 		8F756C0B2475EAF400142787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F756C092475EAF400142787 /* LaunchScreen.storyboard */; };
+		8F7A35DF249FBB3C00414630 /* TransactionTBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A35DE249FBB3C00414630 /* TransactionTBViewController.swift */; };
+		8F7A35E1249FBC0700414630 /* AttachTransActViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A35E0249FBC0700414630 /* AttachTransActViewController.swift */; };
+		8F7A35E3249FD31500414630 /* InterWebServers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7A35E2249FD31500414630 /* InterWebServers.swift */; };
 		8F95B5C4248AA7E30039DDBC /* ExpansionSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95B5C3248AA7E30039DDBC /* ExpansionSegue.swift */; };
 		8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9C99BA249A909200E862A7 /* IsValidEmailOrNaw.swift */; };
 		8FA9B2E82491A4E2002A9923 /* SurprisedPikachu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */; };
@@ -55,6 +58,9 @@
 		8F756C072475EAF400142787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F756C0A2475EAF400142787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F756C0C2475EAF400142787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F7A35DE249FBB3C00414630 /* TransactionTBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTBViewController.swift; sourceTree = "<group>"; };
+		8F7A35E0249FBC0700414630 /* AttachTransActViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachTransActViewController.swift; sourceTree = "<group>"; };
+		8F7A35E2249FD31500414630 /* InterWebServers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterWebServers.swift; sourceTree = "<group>"; };
 		8F95B5C3248AA7E30039DDBC /* ExpansionSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpansionSegue.swift; sourceTree = "<group>"; };
 		8F9C99BA249A909200E862A7 /* IsValidEmailOrNaw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsValidEmailOrNaw.swift; sourceTree = "<group>"; };
 		8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SurprisedPikachu.gif; sourceTree = "<group>"; };
@@ -140,6 +146,7 @@
 				8F756C002475EAEE00142787 /* SceneDelegate.swift */,
 				8F2F2E9524786B55009A5E86 /* ViewControls */,
 				8F756C042475EAEE00142787 /* Main.storyboard */,
+				8F7A35E4249FD33A00414630 /* MVVM */,
 				8FEEC594247C643500488FCD /* Models */,
 				8F845FDC247E1B8B00B79C76 /* Cells */,
 				8F2F2E9624786B78009A5E86 /* Views */,
@@ -149,6 +156,16 @@
 				8FF92153247986220012A637 /* GoogleService-Info.plist */,
 			);
 			path = Connecto;
+			sourceTree = "<group>";
+		};
+		8F7A35E4249FD33A00414630 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				8F7A35DE249FBB3C00414630 /* TransactionTBViewController.swift */,
+				8F7A35E2249FD31500414630 /* InterWebServers.swift */,
+				8F7A35E0249FBC0700414630 /* AttachTransActViewController.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 		8F845FDC247E1B8B00B79C76 /* Cells */ = {
@@ -308,14 +325,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF921562479960A0012A637 /* GistaViewController.swift in Sources */,
+				8F7A35E1249FBC0700414630 /* AttachTransActViewController.swift in Sources */,
 				8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */,
 				8FEEC593247C606C00488FCD /* iMess.swift in Sources */,
 				8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */,
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
 				8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */,
 				8F756C032475EAEE00142787 /* KaoViewController.swift in Sources */,
+				8F7A35DF249FBB3C00414630 /* TransactionTBViewController.swift in Sources */,
 				8FF4D4B5249856650031756A /* AlertFormula.swift in Sources */,
 				8F95B5C4248AA7E30039DDBC /* ExpansionSegue.swift in Sources */,
+				8F7A35E3249FD31500414630 /* InterWebServers.swift in Sources */,
 				8FEEC597247C656D00488FCD /* ChatBubbleCellooMi.swift in Sources */,
 				8F5B3069247AE35600EE7AA0 /* iMessViewController.swift in Sources */,
 				8F756BFF2475EAEE00142787 /* AppDelegate.swift in Sources */,
