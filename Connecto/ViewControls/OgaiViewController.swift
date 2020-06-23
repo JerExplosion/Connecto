@@ -22,10 +22,9 @@ class OgaiViewController: UIViewController {
             
             Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
                 guard let self = self else { return } // is this safety measure necessary tho?
-                
+
                 if let ergo = error {
-                    
-                    //     print()
+   
                     if ergo.localizedDescription ==  GloballyUsed.emailSignInError {
                         
                         self.alertFormula(title: nil, message: "Cannot find this Email address", action: "Try again")

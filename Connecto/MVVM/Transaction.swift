@@ -9,12 +9,10 @@
 import Foundation
 
 struct Transaction: Codable {
-    
     let userName: String
     let email: String
     let type: Types
     let size: Sizes
-    
 }
 
 enum Sizes: String, Codable {
@@ -22,7 +20,7 @@ enum Sizes: String, Codable {
     case dos
     case tres
 }
-     
+    
 enum Types: String, Codable {
     case college
     case highSchool

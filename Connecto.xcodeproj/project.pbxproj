@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		110703B6695437AC599D97B9 /* Pods_Connecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0D864957651236DBFDAAEE /* Pods_Connecto.framework */; };
 		8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F53432479D1C4006AB91C /* OgaiViewController.swift */; };
+		8F1621FA24A26B69005C8D88 /* VMTransactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1621F924A26B69005C8D88 /* VMTransactive.swift */; };
 		8F2D646024A1041900B5B2E3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D645F24A1041900B5B2E3 /* Transaction.swift */; };
 		8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */; };
 		8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */; };
@@ -45,6 +46,7 @@
 		5A0D864957651236DBFDAAEE /* Pods_Connecto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connecto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7724E9231B9953BFAE948B61 /* Pods-Connecto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connecto.release.xcconfig"; path = "Target Support Files/Pods-Connecto/Pods-Connecto.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F53432479D1C4006AB91C /* OgaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgaiViewController.swift; sourceTree = "<group>"; };
+		8F1621F924A26B69005C8D88 /* VMTransactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMTransactive.swift; sourceTree = "<group>"; };
 		8F2D645F24A1041900B5B2E3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedButtonExtension.swift; sourceTree = "<group>"; };
 		8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCellooU.swift; sourceTree = "<group>"; };
@@ -98,6 +100,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F1621F824A26B21005C8D88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8F1621F924A26B69005C8D88 /* VMTransactive.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		8F2F2E9524786B55009A5E86 /* ViewControls */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 				8F756C002475EAEE00142787 /* SceneDelegate.swift */,
 				8F2F2E9524786B55009A5E86 /* ViewControls */,
 				8F756C042475EAEE00142787 /* Main.storyboard */,
+				8F1621F824A26B21005C8D88 /* ViewModels */,
 				8F7A35E4249FD33A00414630 /* MVVM */,
 				8FEEC594247C643500488FCD /* Models */,
 				8F845FDC247E1B8B00B79C76 /* Cells */,
@@ -331,6 +342,7 @@
 				8FF921562479960A0012A637 /* GistaViewController.swift in Sources */,
 				8F7A35E1249FBC0700414630 /* AttachTransActViewController.swift in Sources */,
 				8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */,
+				8F1621FA24A26B69005C8D88 /* VMTransactive.swift in Sources */,
 				8FEEC593247C606C00488FCD /* iMess.swift in Sources */,
 				8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */,
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
