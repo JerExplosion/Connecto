@@ -31,7 +31,6 @@ class InterWebService{
                 completionBlock(.failure(InterNetError.decoderError))
             }
         }.resume()
-        
     }
 }
               

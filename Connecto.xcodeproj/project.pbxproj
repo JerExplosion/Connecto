@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		110703B6695437AC599D97B9 /* Pods_Connecto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0D864957651236DBFDAAEE /* Pods_Connecto.framework */; };
 		8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0F53432479D1C4006AB91C /* OgaiViewController.swift */; };
+		8F2D646024A1041900B5B2E3 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D645F24A1041900B5B2E3 /* Transaction.swift */; };
 		8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */; };
 		8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */; };
 		8F37F93B248E9FFE00C9CCBF /* ChatBubbleCellooU.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F37F939248E9FFE00C9CCBF /* ChatBubbleCellooU.xib */; };
@@ -44,6 +45,7 @@
 		5A0D864957651236DBFDAAEE /* Pods_Connecto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connecto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7724E9231B9953BFAE948B61 /* Pods-Connecto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connecto.release.xcconfig"; path = "Target Support Files/Pods-Connecto/Pods-Connecto.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F53432479D1C4006AB91C /* OgaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgaiViewController.swift; sourceTree = "<group>"; };
+		8F2D645F24A1041900B5B2E3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedButtonExtension.swift; sourceTree = "<group>"; };
 		8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCellooU.swift; sourceTree = "<group>"; };
 		8F37F939248E9FFE00C9CCBF /* ChatBubbleCellooU.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatBubbleCellooU.xib; sourceTree = "<group>"; };
@@ -162,8 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				8F7A35DE249FBB3C00414630 /* TransactionTBViewController.swift */,
-				8F7A35E2249FD31500414630 /* InterWebServers.swift */,
 				8F7A35E0249FBC0700414630 /* AttachTransActViewController.swift */,
+				8F2D645F24A1041900B5B2E3 /* Transaction.swift */,
+				8F7A35E2249FD31500414630 /* InterWebServers.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F2D646024A1041900B5B2E3 /* Transaction.swift in Sources */,
 				8FF921562479960A0012A637 /* GistaViewController.swift in Sources */,
 				8F7A35E1249FBC0700414630 /* AttachTransActViewController.swift in Sources */,
 				8F9C99BB249A909200E862A7 /* IsValidEmailOrNaw.swift in Sources */,
