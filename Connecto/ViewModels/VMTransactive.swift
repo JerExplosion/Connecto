@@ -34,10 +34,10 @@ extension TransactiveViewModel {
     var email: String {
         return self.transaction.email
     }
-    var sizes: String {
+    var size: String {
         return self.transaction.size.rawValue.capitalized
     }
-    var types: String {
+    var type: String {
         return self.transaction.type.rawValue
     }
 }

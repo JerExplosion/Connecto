@@ -14,6 +14,4 @@ class AttachTransActViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    
 }

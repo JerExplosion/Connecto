@@ -22,6 +22,9 @@ class InterWebService{
                 return
             }
             let result = try? JSONDecoder().decode(T.self, from: unwrappedData)
+            
+            print(unwrappedData)
+            
             if let unwrappedResult = result {
                 DispatchQueue.main.async {
                     completionBlock(.success(unwrappedResult))

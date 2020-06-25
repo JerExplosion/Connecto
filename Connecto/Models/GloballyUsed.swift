@@ -41,5 +41,9 @@ public struct GloballyUsed {
     static let emptyEmailRegistryError = "An email address must be provided."
     
     static let passwordRegistryError = "The password must be 6 characters long or more."
+    
+    // MARK: - MVVMs
+    
+    static let transactiveCelloID = "transactiveCello"
 }
                                 
