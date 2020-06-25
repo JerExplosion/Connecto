@@ -11,7 +11,7 @@ import Foundation
 
 class TransactionTBViewController: UITableViewController {
     
-    var transactiveArrayViewModelObject = TransactionsArrayViewModel()
+    private var transactiveArrayViewModelObject = TransactionsArrayViewModel()
     // weak or not
     override func viewDidLoad() {
         super.viewDidLoad()

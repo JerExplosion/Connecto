@@ -9,19 +9,19 @@
 import Foundation
 
 struct Transaction: Codable {
-    let userName: String
+    let name: String
     let email: String
-    let type: Types
-    let size: Sizes
+    let type: CType
+    let size: CSize
 }
 
-enum Sizes: String, Codable {
+enum CSize: String, Codable, CaseIterable {
     case uno
     case dos
     case tres
 }
     
-enum Types: String, Codable {
+enum CType: String, Codable, CaseIterable {
     case college
     case highSchool
 }

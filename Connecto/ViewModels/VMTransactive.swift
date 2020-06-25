@@ -28,8 +28,8 @@ struct TransactiveViewModel {
 
 extension TransactiveViewModel {
     
-    var userName: String {
-        return self.transaction.userName
+    var name: String {
+        return self.transaction.name
     }
     var email: String {
         return self.transaction.email

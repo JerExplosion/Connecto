@@ -45,5 +45,6 @@ public struct GloballyUsed {
     // MARK: - MVVMs
     
     static let transactiveCelloID = "transactiveCello"
+    static let createTransactionCelloID = "createTransactionCello"
 }
                                 
