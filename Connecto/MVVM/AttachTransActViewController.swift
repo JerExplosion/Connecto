@@ -17,11 +17,27 @@ class AttachTransActViewController: UIViewController {
         super.viewDidLoad()
         tableV.delegate = self
         tableV.dataSource = self
+        self.segmentsGenerated()
     }
+    
+    var customizedSegmentedControl: UISegmentedControl!
  
     @IBOutlet weak var tableV: UITableView!
+    
+    func segmentsGenerated() {
+        customizedSegmentedControl = UISegmentedControl(items: self.createTransactionViewModelObject.sizes)
+        
+        customizedSegmentedControl.translatesAutoresizingMaskIntoConstraints = false
+        
+        self.view.addSubview(self.customizedSegmentedControl)
+        
+        customizedSegmentedControl.topAnchor.constraint(equalTo: self.tableV.bottomAnchor, constant: 20).isActive = true
+        
+        customizedSegmentedControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+    }
 
 }
+
 
 extension AttachTransActViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,8 +49,15 @@ extension AttachTransActViewController: UITableViewDelegate, UITableViewDataSour
         let cello = tableV.dequeueReusableCell(withIdentifier: GloballyUsed.createTransactionCelloID, for: indexPath)
         
         cello.textLabel?.text = "T-holder" //self.createTransactionViewModelObject.types[indexPath.row]
-        
         return cello
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableV.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableV.cellForRow(at: indexPath)?.accessoryType = .detailDisclosureButton
     }
 
 }

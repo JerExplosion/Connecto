@@ -488,17 +488,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="O4c-BY-uDA">
-                                <rect key="frame" x="138.5" y="529" width="137" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="7fS-nc-n0n"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Uno"/>
-                                    <segment title="Dos"/>
-                                    <segment title="Tres"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVN-qv-Zay">
                                 <rect key="frame" x="97" y="592" width="220" height="34"/>
                                 <constraints>
@@ -510,15 +499,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="O4c-BY-uDA" firstAttribute="centerX" secondItem="wGZ-2I-WVo" secondAttribute="centerX" id="0fK-Vm-Q8M"/>
-                            <constraint firstItem="uVN-qv-Zay" firstAttribute="top" secondItem="O4c-BY-uDA" secondAttribute="bottom" constant="32" id="5Hw-CI-0Uc"/>
                             <constraint firstItem="z2D-5x-eo4" firstAttribute="width" secondItem="wGZ-2I-WVo" secondAttribute="width" id="HaF-nX-evm"/>
+                            <constraint firstItem="uVN-qv-Zay" firstAttribute="top" secondItem="z2D-5x-eo4" secondAttribute="bottom" constant="98" id="Hus-aj-p2F"/>
                             <constraint firstItem="uVN-qv-Zay" firstAttribute="centerX" secondItem="wGZ-2I-WVo" secondAttribute="centerX" id="Qr7-4I-AOW"/>
                             <constraint firstItem="z2D-5x-eo4" firstAttribute="height" secondItem="wGZ-2I-WVo" secondAttribute="height" multiplier="0.52" id="Rj7-oE-Xil"/>
                             <constraint firstItem="z2D-5x-eo4" firstAttribute="leading" secondItem="r9q-SK-NnX" secondAttribute="leading" id="Zbn-1X-quG"/>
                             <constraint firstItem="vgU-V1-F6o" firstAttribute="top" secondItem="uVN-qv-Zay" secondAttribute="bottom" constant="8" id="b9z-3l-V0a"/>
+                            <constraint firstItem="r9q-SK-NnX" firstAttribute="bottom" secondItem="vgU-V1-F6o" secondAttribute="bottom" constant="140" id="iBI-je-zqe"/>
                             <constraint firstItem="vgU-V1-F6o" firstAttribute="centerX" secondItem="wGZ-2I-WVo" secondAttribute="centerX" id="lJ9-3f-5qf"/>
-                            <constraint firstItem="O4c-BY-uDA" firstAttribute="top" secondItem="z2D-5x-eo4" secondAttribute="bottom" constant="35" id="rVR-63-sgK"/>
                             <constraint firstItem="z2D-5x-eo4" firstAttribute="top" secondItem="r9q-SK-NnX" secondAttribute="top" id="wLG-15-vcP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r9q-SK-NnX"/>

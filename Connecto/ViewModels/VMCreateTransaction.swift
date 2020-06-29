@@ -20,5 +20,4 @@ struct CreateTransactionViewModel {
     var sizes: [String] {
         return CSize.allCases.map { $0.rawValue.capitalized }
     }
-    
 } 
