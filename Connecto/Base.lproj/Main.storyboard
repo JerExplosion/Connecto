@@ -513,10 +513,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Append New Transaction" id="ixm-oQ-i1h">
                         <barButtonItem key="leftBarButtonItem" title="Off" id="RHB-DF-doU"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="EEF-9B-fyF"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="EEF-9B-fyF">
+                            <connections>
+                                <action selector="cache:" destination="ERD-hE-1l8" id="rQ9-yj-eHj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dosTextfield" destination="vgU-V1-F6o" id="2zX-Gy-jYt"/>
                         <outlet property="tableV" destination="z2D-5x-eo4" id="lSl-gB-8io"/>
+                        <outlet property="unoTextfield" destination="uVN-qv-Zay" id="uTb-gY-ozF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZp-rV-Sw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

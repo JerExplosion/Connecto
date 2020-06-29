@@ -13,6 +13,9 @@ struct CreateTransactionViewModel {
     var name: String?
     var mail: String?
     
+    var selectedTypo: String?
+    var selectedSiza: String?
+    
     var types: [String] {
         return CType.allCases.map({ $0.rawValue.capitalized })
     }
