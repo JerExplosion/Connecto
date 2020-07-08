@@ -26,7 +26,7 @@ class iMessViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         iMessTable.dataSource = self
-        navigationItem.title = "⚡️"
+        navigationItem.title = ""
         navigationItem.hidesBackButton = true
         
         iMessTable.register(UINib(nibName: GloballyUsed.chatBubbleNibMi, bundle: nil), forCellReuseIdentifier: GloballyUsed.chatCelloIDMi)

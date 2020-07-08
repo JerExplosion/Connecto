@@ -21,7 +21,7 @@ class KaoViewController: UIViewController {
         super.viewDidLoad()
         
         centeredLabel.text = ""
-        let fullDisplay = "Flashy⚡️Connecto"
+        let fullDisplay = "⚡️🔥 Connecto 🔥⚡️"       
         var unitCount = 0
         
         for textUnit in fullDisplay {

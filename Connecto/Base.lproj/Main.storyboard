@@ -30,7 +30,7 @@
                                     <segue destination="bew-UF-STK" kind="show" id="JsE-9f-sg8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flashy⚡️Connecto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-gj-3UT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔥 Connecto ⚡️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-gj-3UT">
                                 <rect key="frame" x="52" y="418" width="310" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JV3-U4-etH"/>
@@ -140,7 +140,7 @@
                                         <rect key="frame" x="49" y="50" width="317" height="45"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -379,7 +379,7 @@
             </objects>
             <point key="canvasLocation" x="-507" y="-250"/>
         </scene>
-        <!--⚡️-->
+        <!--冰晶-->
         <scene sceneID="HSE-io-UcS">
             <objects>
                 <viewController id="Ls1-lv-gsy" customClass="iMessViewController" customModule="Connecto" customModuleProvider="target" sceneMemberID="viewController">
@@ -399,8 +399,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="M0F-1b-Kq9"/>
                                         </constraints>
-                                        <color key="textColor" name="BrandPurple"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSr-rU-wU1">
@@ -441,7 +441,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="epI-vR-ZrE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="⚡️" id="Crn-3c-YRc">
+                    <navigationItem key="navigationItem" title="冰晶" id="Crn-3c-YRc">
                         <barButtonItem key="backBarButtonItem" title="⚡️" id="EvW-vi-53Q"/>
                         <barButtonItem key="rightBarButtonItem" title="Sign out" id="rF8-yR-Ugd">
                             <connections>
@@ -657,9 +657,6 @@
         </namedColor>
         <namedColor name="BrandLightPurple">
             <color red="0.98000001907348633" green="0.9649999737739563" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="BrandPurple">
-            <color red="0.67500001192092896" green="0.43500000238418579" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
