@@ -8,8 +8,6 @@
 
 import UIKit
 
-import UIKit
-
 @IBDesignable class CurvedButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat = 0 {

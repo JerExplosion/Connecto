@@ -16,6 +16,7 @@
 		8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */; };
 		8F37F93B248E9FFE00C9CCBF /* ChatBubbleCellooU.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F37F939248E9FFE00C9CCBF /* ChatBubbleCellooU.xib */; };
 		8F37F93D248EECF000C9CCBF /* iMessTviExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F37F93C248EECF000C9CCBF /* iMessTviExtension.swift */; };
+		8F4EB01124BE4A2C00528447 /* RImageV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4EB01024BE4A2C00528447 /* RImageV.swift */; };
 		8F5B3069247AE35600EE7AA0 /* iMessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B3068247AE35600EE7AA0 /* iMessViewController.swift */; };
 		8F5B306B247AEA1600EE7AA0 /* CrossDissolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5B306A247AEA1600EE7AA0 /* CrossDissolve.swift */; };
 		8F756BFF2475EAEE00142787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F756BFE2475EAEE00142787 /* AppDelegate.swift */; };
@@ -54,6 +55,7 @@
 		8F37F938248E9FFE00C9CCBF /* ChatBubbleCellooU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCellooU.swift; sourceTree = "<group>"; };
 		8F37F939248E9FFE00C9CCBF /* ChatBubbleCellooU.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatBubbleCellooU.xib; sourceTree = "<group>"; };
 		8F37F93C248EECF000C9CCBF /* iMessTviExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessTviExtension.swift; sourceTree = "<group>"; };
+		8F4EB01024BE4A2C00528447 /* RImageV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RImageV.swift; sourceTree = "<group>"; };
 		8F5B3068247AE35600EE7AA0 /* iMessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessViewController.swift; sourceTree = "<group>"; };
 		8F5B306A247AEA1600EE7AA0 /* CrossDissolve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossDissolve.swift; sourceTree = "<group>"; };
 		8F756BFB2475EAEE00142787 /* Connecto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connecto.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8F37F93C248EECF000C9CCBF /* iMessTviExtension.swift */,
+				8F4EB01024BE4A2C00528447 /* RImageV.swift */,
 				8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */,
 				8F5B306A247AEA1600EE7AA0 /* CrossDissolve.swift */,
 				8F95B5C3248AA7E30039DDBC /* ExpansionSegue.swift */,
@@ -352,6 +355,7 @@
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
 				8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */,
 				8F756C032475EAEE00142787 /* KaoViewController.swift in Sources */,
+				8F4EB01124BE4A2C00528447 /* RImageV.swift in Sources */,
 				8F7A35DF249FBB3C00414630 /* TransactionTBViewController.swift in Sources */,
 				8FF4D4B5249856650031756A /* AlertFormula.swift in Sources */,
 				8F95B5C4248AA7E30039DDBC /* ExpansionSegue.swift in Sources */,
