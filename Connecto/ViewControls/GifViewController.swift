@@ -27,8 +27,36 @@ class GifViewController: UIViewController & UIImagePickerControllerDelegate & UI
     }
     
     @IBAction func uploadImgFro(_ sender: UIButton) {
+        pickFromLibraryImgView.contentMode = .scaleAspectFill
         
-        helperForImagePicking(cameraOrLibrary: .photoLibrary)
+  //      helperForImagePicking(cameraOrLibrary: .photoLibrary)
+        
+        self.uploadButtonActionSheet()
+    }
+    
+    func uploadButtonActionSheet() {
+        
+        let cameraOrPhotoLibraryAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        let action1 = UIAlertAction(title: "Choose From Library", style: .default) { cameraAction in
+            self.helperForImagePicking(cameraOrLibrary: .photoLibrary)
+        }
+        let action2 = UIAlertAction(title: "Take Photo", style: .default) { (photolibraryAction) in
+            self.helperForImagePicking(cameraOrLibrary: .camera)
+        }
+        let deletion = UIAlertAction(title: "Delete Photo", style: .default) {
+            deleteAction in
+            self.pickFromLibraryImgView.backgroundColor = .black
+        }
+        
+        let cancellation = UIAlertAction(title: "Cancel", style: .cancel) {
+            (cancelAction) in
+            print(cancelAction)
+        }
+        
+        [action1, action2, deletion, cancellation].map({ cameraOrPhotoLibraryAlertController.addAction($0) })
+
+        present(cameraOrPhotoLibraryAlertController, animated: true)
     }
     
     func helperForImagePicking(cameraOrLibrary sourceType: UIImagePickerController.SourceType) {

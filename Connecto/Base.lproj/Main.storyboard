@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dmX-xy-VfP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BOG-19-ubD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -31,11 +31,11 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔥 Connecto ⚡️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pty-gj-3UT">
-                                <rect key="frame" x="52" y="418" width="310" height="60"/>
+                                <rect key="frame" x="0.0" y="388" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="JV3-U4-etH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="33"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="30"/>
                                 <color key="textColor" red="0.43257567286491394" green="0.97818559408187866" blue="0.91593527793884277" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -46,7 +46,7 @@
                                     <constraint firstAttribute="height" constant="50" id="AIb-3B-2fm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <state key="normal" title="Register">
+                                <state key="normal" title="Sign Up">
                                     <color key="titleColor" name="BrandBlue"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -61,12 +61,12 @@
                             <constraint firstItem="Pty-gj-3UT" firstAttribute="centerX" secondItem="Xpk-3H-nq1" secondAttribute="centerX" id="HaN-6f-BXF"/>
                             <constraint firstItem="v9p-fS-Icq" firstAttribute="top" secondItem="2mb-Wj-PFj" secondAttribute="bottom" constant="8" id="INC-4N-qJa"/>
                             <constraint firstItem="2mb-Wj-PFj" firstAttribute="trailing" secondItem="sNe-4Z-9qz" secondAttribute="trailing" id="KTz-3O-S3m"/>
-                            <constraint firstItem="Pty-gj-3UT" firstAttribute="leading" secondItem="sNe-4Z-9qz" secondAttribute="leading" constant="52" id="MdH-BW-8Zr"/>
+                            <constraint firstItem="Pty-gj-3UT" firstAttribute="leading" secondItem="sNe-4Z-9qz" secondAttribute="leading" id="MdH-BW-8Zr"/>
                             <constraint firstItem="2mb-Wj-PFj" firstAttribute="leading" secondItem="sNe-4Z-9qz" secondAttribute="leading" id="PhR-oS-fgC"/>
                             <constraint firstItem="v9p-fS-Icq" firstAttribute="leading" secondItem="sNe-4Z-9qz" secondAttribute="leading" id="Q9d-EB-kUH"/>
-                            <constraint firstItem="Pty-gj-3UT" firstAttribute="centerY" secondItem="Xpk-3H-nq1" secondAttribute="centerY" id="i0E-zV-eKH"/>
+                            <constraint firstItem="Pty-gj-3UT" firstAttribute="centerY" secondItem="Xpk-3H-nq1" secondAttribute="centerY" constant="-30" id="i0E-zV-eKH"/>
                             <constraint firstItem="v9p-fS-Icq" firstAttribute="trailing" secondItem="sNe-4Z-9qz" secondAttribute="trailing" id="tMi-CN-LH1"/>
-                            <constraint firstItem="sNe-4Z-9qz" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pty-gj-3UT" secondAttribute="trailing" id="zk6-hw-MN9"/>
+                            <constraint firstItem="sNe-4Z-9qz" firstAttribute="trailing" secondItem="Pty-gj-3UT" secondAttribute="trailing" id="zk6-hw-MN9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sNe-4Z-9qz"/>
                     </view>
@@ -228,33 +228,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="137-3737-77377" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfk-Hb-Sd7">
-                                <rect key="frame" x="24" y="284" width="366" height="46"/>
+                                <rect key="frame" x="24" y="280" width="366" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hothead@hothead.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcs-VU-iyo">
-                                <rect key="frame" x="24" y="329" width="366" height="46"/>
+                                <rect key="frame" x="24" y="308" width="366" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDr-ha-dcI">
-                                <rect key="frame" x="178" y="621" width="49" height="30"/>
+                                <rect key="frame" x="180" y="671" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload"/>
                                 <connections>
                                     <action selector="uploadImgFro:" destination="dmX-xy-VfP" eventType="touchUpInside" id="8dP-Jh-Wcx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="o0E-Bu-gDe" customClass="RImageView" customModule="Connecto" customModuleProvider="target">
-                                <rect key="frame" x="133" y="514.5" width="138" height="96"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SurprisedPikachu.gif" translatesAutoresizingMaskIntoConstraints="NO" id="o0E-Bu-gDe" customClass="RImageView" customModule="Connecto" customModuleProvider="target">
+                                <rect key="frame" x="170" y="585.5" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cRadius">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="35"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
@@ -666,7 +666,6 @@
     <resources>
         <image name="SurprisedPikachu.gif" width="500" height="500"/>
         <image name="paperplane.fill" catalog="system" width="128" height="121"/>
-        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="textfield" width="298" height="93"/>
         <namedColor name="BrandBlue">
             <color red="0.16500000655651093" green="0.77999997138977051" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
