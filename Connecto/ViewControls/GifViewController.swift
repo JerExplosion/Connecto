@@ -46,8 +46,8 @@ class GifViewController: UIViewController & UIImagePickerControllerDelegate & UI
         }
         let deletion = UIAlertAction(title: "Delete Photo", style: .default) {
             deleteAction in
-         //   self.pickFromLibraryImgView.backgroundColor = .black
-         //   self.pickFromLibraryImgView.image = nil
+            self.pickFromLibraryImgView.backgroundColor = .black
+            self.pickFromLibraryImgView.image = nil
         }
         
         let cancellation = UIAlertAction(title: "Cancel", style: .cancel) {

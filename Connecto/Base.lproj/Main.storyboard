@@ -258,6 +258,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cU5-Ot-73v">
+                                <rect key="frame" x="342" y="778" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -464,7 +469,7 @@
                         <barButtonItem key="backBarButtonItem" title="⚡️" id="EvW-vi-53Q"/>
                         <barButtonItem key="leftBarButtonItem" title="Profile" id="3eg-A3-en7">
                             <connections>
-                                <segue destination="dmX-xy-VfP" kind="showDetail" id="Vil-lQ-ZCi"/>
+                                <segue destination="dmX-xy-VfP" kind="presentation" id="Vil-lQ-ZCi"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Sign out" id="rF8-yR-Ugd">
