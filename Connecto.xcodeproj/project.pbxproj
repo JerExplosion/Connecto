@@ -33,6 +33,7 @@
 		8FA9B2E82491A4E2002A9923 /* SurprisedPikachu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */; };
 		8FA9B2EA2491A55C002A9923 /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9B2E92491A55C002A9923 /* GifViewController.swift */; };
 		8FA9B2EC2491A753002A9923 /* GIFHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA9B2EB2491A753002A9923 /* GIFHandler.swift */; };
+		8FAD44EC24C7C35C00505612 /* UIColorETan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAD44EB24C7C35C00505612 /* UIColorETan.swift */; };
 		8FAF76012481B0EB00557525 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8FAF76002481B0EB00557525 /* IQKeyboardManagerSwift */; };
 		8FEEC593247C606C00488FCD /* iMess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC592247C606C00488FCD /* iMess.swift */; };
 		8FEEC597247C656D00488FCD /* ChatBubbleCellooMi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEEC595247C656D00488FCD /* ChatBubbleCellooMi.swift */; };
@@ -74,6 +75,7 @@
 		8FA9B2E72491A4E2002A9923 /* SurprisedPikachu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SurprisedPikachu.gif; sourceTree = "<group>"; };
 		8FA9B2E92491A55C002A9923 /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		8FA9B2EB2491A753002A9923 /* GIFHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFHandler.swift; sourceTree = "<group>"; };
+		8FAD44EB24C7C35C00505612 /* UIColorETan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorETan.swift; sourceTree = "<group>"; };
 		8FEEC592247C606C00488FCD /* iMess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMess.swift; sourceTree = "<group>"; };
 		8FEEC595247C656D00488FCD /* ChatBubbleCellooMi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleCellooMi.swift; sourceTree = "<group>"; };
 		8FEEC596247C656D00488FCD /* ChatBubbleCellooMi.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatBubbleCellooMi.xib; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				8F37F93C248EECF000C9CCBF /* iMessTviExtension.swift */,
+				8FAD44EB24C7C35C00505612 /* UIColorETan.swift */,
 				8F4EB01024BE4A2C00528447 /* RImageV.swift */,
 				8F2F2E9324784532009A5E86 /* CurvedButtonExtension.swift */,
 				8F5B306A247AEA1600EE7AA0 /* CrossDissolve.swift */,
@@ -354,6 +357,7 @@
 				8F2F2E9424784532009A5E86 /* CurvedButtonExtension.swift in Sources */,
 				8F0F53442479D1C4006AB91C /* OgaiViewController.swift in Sources */,
 				8F37F93A248E9FFE00C9CCBF /* ChatBubbleCellooU.swift in Sources */,
+				8FAD44EC24C7C35C00505612 /* UIColorETan.swift in Sources */,
 				8F756C032475EAEE00142787 /* KaoViewController.swift in Sources */,
 				8F4EB01124BE4A2C00528447 /* RImageV.swift in Sources */,
 				8F7A35DF249FBB3C00414630 /* TransactionTBViewController.swift in Sources */,
