@@ -31,7 +31,8 @@ extension iMessViewController: UITableViewDataSource, UITableViewDelegate {
         
         if dangeeMess.sender == Auth.auth().currentUser?.email {
             ultimateCello = celloMi
-            celloMi.chatBubbleView.backgroundColor = UIColor(named: "BrandLightBlue")
+            celloMi.chatBubbleView.backgroundColor = generateColorWithRGB(red: 232, green: 250, blue: 255, alpha: 1)
+                // UIColor(named: "BrandLightBlue")
             celloMi.bubbleLabel.textColor = UIColor.black
             
         } else {
