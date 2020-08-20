@@ -6,6 +6,8 @@ target 'Connecto' do
   use_frameworks!
 
   # Pods for Connecto
+
+  pod "ViewAnimator"
   
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'

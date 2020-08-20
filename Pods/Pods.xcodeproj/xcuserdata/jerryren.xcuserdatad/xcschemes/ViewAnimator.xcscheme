@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73CDC3D182DB953135F62609681B443D"
-               BuildableName = "abseil.framework"
-               BlueprintName = "abseil"
+               BlueprintIdentifier = "91BFC2827E7E6E2B51AB2CFF58AC6317"
+               BuildableName = "ViewAnimator.framework"
+               BlueprintName = "ViewAnimator"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
